@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    <table>
+        <tr>
+            <td>Amout</td>
+            <td>From Currency</td>
+            <td>To Currency</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="inputMoney"></td>
+            <td>
+                <select id="Money1">
+                    <option value="VietNam">VietNam</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select id="Money2">
+                    <option value="USD">USD</option>
+                    <option value="VietNam">VietNam</option>
+                </select>
+            </td>
+            <td><input type="button" value="Convert" id="convert">
+            </td>
+        </tr>
+    </table>
+    <div id="result"></div>
+</form>
+<script>
+    var Money1 = document.getElementById("Money1");
+    var Money2 = document.getElementById("Money2");
+    var convert = document.getElementById("convert");
+    convert.addEventListener("click",runConvert);
+
+    function runConvert(){
+        if(Money1.value == "VietNam" && Money2.value == "USD"){
+            var total = document.getElementById("inputMoney").value/23000
+            document.getElementById("result").innerHTML ="số tiền là "+ total;
+        }
+        if(Money1.value == "USD" && Money2.value == "VietNam"){
+            var total = document.getElementById("inputMoney").value*23000
+            document.getElementById("result").innerHTML ="số tiền là "+ total;
+        }
+        if(Money1.value == "VietNam" && Money2.value == "VietNam" || Money1.value == "USD" && Money2.value == "USD"){
+            var total = document.getElementById("inputMoney").value = document.getElementById("inputMoney").value
+            document.getElementById("result").innerHTML ="số tiền là "+ total;
+        }
+    }
+
+
+
+
+
+</script>
+</body>
+</html>
