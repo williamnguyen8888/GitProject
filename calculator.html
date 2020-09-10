@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nguyễn Phạm Tuấn Anh</title>
+</head>
+<body>
+<h1>Calculator</h1>
+<form action="">
+    <p>
+    <input type="text" id="inputOne">
+    <input type="text" id="inputTwo">
+    </p>
+    <div id="total"></div>
+    <input type="button" value="Addition(+)" id="cong">
+    <input type="button" value="subtraction(-)" id="tru">
+    <input type="button" value="multiplication(X)" id="nhan">
+    <input type="button" value="Division(/)" id="chia">
+</form>
+<script>
+    var inputOne = document.getElementById("inputOne")
+    var inputTwo = document.getElementById("inputTwo")
+    var cong = document.getElementById("cong")
+    var tru = document.getElementById("tru")
+    var nhan = document.getElementById("nhan")
+    var chia = document.getElementById("chia")
+    cong.addEventListener("click",funCong)
+    tru.addEventListener("click",funTru)
+    nhan.addEventListener("click",funNhan)
+    chia.addEventListener("click",funChia)
+
+    function funCong(){
+        total = parseFloat(inputOne.value) + parseFloat(inputTwo.value)
+        document.getElementById("total").innerHTML = total;
+    }
+    function funTru(){
+        total = parseFloat(inputOne.value) - parseFloat(inputTwo.value)
+        document.getElementById("total").innerHTML = total;
+    }
+    function funNhan(){
+        total = parseFloat(inputOne.value) * parseFloat(inputTwo.value)
+        document.getElementById("total").innerHTML = total;
+    }
+    function funChia(){
+        total = parseFloat(inputOne.value) / parseFloat(inputTwo.value)
+        document.getElementById("total").innerHTML = total;
+    }
+</script>
+</body>
+</html>
