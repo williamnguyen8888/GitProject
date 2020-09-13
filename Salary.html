@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nguyễn Phạm Tuấn Anh</title>
+
+</head>
+<body>
+<input type="text" id="inputTotal">
+<select name="" id="lvSalary">
+    <option value="lv1">Bậc 1</option>
+    <option value="lv2">Bậc 2</option>
+</select>
+
+<input type="button" value="tính thuế" id="submitTotal">
+<div id="resultTotal"></div>
+<script>
+    var inputTotal = document.getElementById("inputTotal")
+    var submitTotal = document.getElementById("submitTotal")
+    var resultTotal = document.getElementById("resultTotal")
+    var total
+    submitTotal.addEventListener("click",fee)
+    function fee(){
+        if (parseInt(inputTotal.value)<10000000){
+            salaryMonth = inputTotal.value
+        }else if(10000000<=parseInt(inputTotal.value) && parseInt(inputTotal.value) <50000000){
+            salaryMonth = inputTotal.value * 0.9
+        }else if(parseInt(inputTotal.value)>50000000){
+            salaryMonth = inputTotal.value * 0.8 * 0.9
+        }
+        function totalSalary(){
+            lvSalary = document.getElementById("lvSalary");
+            if (lvSalary.value == "lv1"){
+                total = salaryMonth * 6 + salaryMonth * 0.9 * 3 + salaryMonth * 0.8 * 3
+                alert(total)
+                resultTotal.innerHTML = "tổng lương 12 tháng là " + total
+            }else if (lvSalary.value == "lv2"){
+                total = salaryMonth * 3 + salaryMonth * 0.9 * 3 + salaryMonth * 0.8 * 6
+                alert(total)
+                resultTotal.innerHTML = "tổng lương 12 tháng là " + total
+            }
+        }
+        totalSalary();
+    }
+
+</script>
+</body>
+</html>
