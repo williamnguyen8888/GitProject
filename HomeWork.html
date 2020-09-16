@@ -10,19 +10,19 @@
     var money = prompt("nhập số tiền bạn muốn gửi");
     var moneyCalCu = money;
     var yearPer = prompt("nhap so nam ban muon gui")
-    var oneYearTest = money;
+    var YearSuccess = money;
 
     for (var i = 1; i <= yearPer; i++) {
         moneyCalCu = moneyCalCu * 1.08
     }
 
     var j =1;
-    if (oneYearTest>300000000){
+    if (YearSuccess>300000000){
         document.write("với "+money+"VNĐ số năm bạn cần gửi để số tiền gửi lớn hơn 300tr là sau ngay khi bạn gửi tiền")
         document.write("<br>")
     }else{
-        while(oneYearTest < 300000000){
-            oneYearTest *= 1.08;
+        while(YearSuccess < 300000000){
+            YearSuccess *= 1.08;
             j++;
         }
         document.write("với "+money+"VNĐ số năm bạn cần gửi để số tiền gửi lớn hơn 300tr là: "+j+" năm")
