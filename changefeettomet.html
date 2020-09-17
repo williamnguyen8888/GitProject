@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+<input type="text" placeholder="feet To meters" id="feetToMet" oninput="convertfeetToMet()">
+<div id="resultFeetToMet"></div>
+</p>
+<input type="text" placeholder="meters To feet" id="metToFeet" oninput="convertMetToFeet()">
+<div id="resultMetToFeet"></div>
+<script>
+let feetToMet = document.getElementById("feetToMet");
+let metToFeet = document.getElementById("metToFeet");
+let resultFeetToMet = document.getElementById("resultFeetToMet");
+let resultMetToFeet = document.getElementById("resultMetToFeet")
+function convertfeetToMet(){
+    if (feetToMet.value == ""){
+        resultFeetToMet.innerHTML = "";
+    }else {
+        let resultMet = 0.305 * parseInt(feetToMet.value)
+        resultFeetToMet.innerHTML = resultMet+" meters";
+    }
+}
+function convertMetToFeet(){
+    if (metToFeet.value == ""){
+        resultMetToFeet.innerHTML = "";
+    }else {
+        let resultFeet = 3.279 * parseInt(metToFeet.value)
+        resultMetToFeet.innerHTML = resultFeet +" feet";
+    }
+
+}
+</script>
+</body>
+</html>
