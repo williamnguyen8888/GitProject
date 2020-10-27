@@ -1,0 +1,374 @@
+#container{
+    padding-left: 25%;
+    padding-top: 5%;
+}
+#containerIphone{
+    width: 300px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+    float: left;
+    margin-right: 100px;
+}
+#screenIphone{
+    width: 90%;
+    height: 90%;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 5%;
+}
+#homeIphone{
+    border: 2px solid black;
+    width: 10%;
+    height: 5%;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 15px;
+}
+#homeIphoneContent{
+    border: 2px solid black;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    margin-top: 8px;
+}
+#containerNokia{
+    width: 300px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+    float: left;
+    margin-left: 20px;
+    background-color: #464648;
+
+}
+#screenNokia{
+    width: 90%;
+    height: 85%;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 4%;
+    background-color: white;
+}
+#screenNokia2{
+    width: 90%;
+    height: 85%;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 4%;
+    background-color: white;
+}
+#screenNokia3{
+    width: 90%;
+    height: 85%;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 4%;
+    background-color: black;
+}
+#screenMenu{
+    width: 90%;
+    height: 85%;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 4%;
+    background-color: white;
+}
+#NaviHome{
+    /*border: 2px solid black;*/
+    width: 10%;
+    height: 5%;
+    margin: auto;
+    margin-top: 2%;
+
+    /*border-radius: 15px;*/
+}
+#NaviBack{
+    width: 10%;
+    height: 5%;
+    float: left;
+    /*border: 1px solid red;*/
+    margin-left: 30px;
+    margin-top: 5px;
+}
+#backNokia{
+    width: 30px;
+}
+#homeNokia{
+    width: 28px;
+}
+#logoNokia{
+    text-align: center;
+    margin-top: 4%;
+    font-size: 20px;
+}
+#ViettelIphone{
+    float: left;
+    margin: 1%;
+    margin-left: 5px;
+}
+#BatteryIphone{
+    float: right;
+    margin-top: 2px;
+    margin-right: 3px;
+
+}
+#batteryLogoIphone{
+    width: 20px;
+   margin-top: 1px;
+    float: right;
+}
+#logoWifiIphone{
+    width: 15px;
+    margin-top: 1%;
+}
+#ContactIphone{
+    width: 50px;
+    margin: auto;
+    margin-top: 20px;
+}
+#contactIphoneImg{
+    width: 45px;
+
+}
+#nameContact{
+    text-align: center;
+}
+#SmsContent{
+    width: 96%;
+    height: 69%;
+    border: none;
+    background: white;
+    /*border: 1px solid red;*/
+    overflow: auto;
+}
+.SmsContentResultNokia{
+    margin-top: 5%;
+    margin-left: 3%;
+    /*border: 1px solid gray;*/
+    /*min-width: 30%;*/
+    width: 70%;
+    border-radius: 15px;
+    padding-left: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #f1f0f0;
+    float: left;
+    text-align: center;
+}
+.SmsContentResultIphone{
+    float: right;
+    margin-top: 5%;
+    margin-left: 3%;
+    /*border: 1px solid gray;*/
+    min-width: 30%;
+    width: 70%;
+    border-radius: 15px;
+    padding-left: 7px;
+    padding-top: 3px;
+    background-color: #0099ff;
+    color: white;
+    text-align: center;
+
+}
+#SmsWrite{
+    width: 100%;
+    /*border: 1px solid gold;*/
+    height: 45px;
+    float: left;
+}
+#SmsWriteContent{
+    margin-top: 4%;
+    width: 65%;
+    margin-left: 2%;
+border-radius: 15px;
+}
+#photoSendLogo{
+    margin-top: 5%  ;
+    width: 25px;
+
+}
+#sendLogo{
+    width: 25px;
+}
+#ButtonSend{
+    /*border: 1px solid red;*/
+    width: 25%;
+    float: right;
+    text-align: right;
+    padding-right: 5%;
+    margin-top: 1%;
+}
+
+#ViettelNokia{
+    float: left;
+    margin: 1%;
+    margin-left: 5px;
+}
+#BatteryNokia{
+    float: right;
+    margin-top: 2px;
+    margin-right: 3px;
+
+}
+#batteryLogoNokia{
+    width: 20px;
+    margin-top: 1px;
+    float: right;
+}
+#logoWifiNokia{
+    width: 15px;
+    margin-top: 1%;
+}
+#ContactNokia{
+    width: 50px;
+    margin: auto;
+    margin-top: 20px;
+}
+#contactNokiaImg{
+    width: 45px;
+
+}
+#nameContactNokia{
+    text-align: center;
+}
+#SmsContentNokia{
+    width: 96%;
+    height: 67%;
+    border: none;
+    background: white;
+    /*border: 1px solid red;*/
+
+    overflow: auto;
+}
+.SmsContentResultNokia1{
+    margin-top: 5%;
+    margin-left: 3%;
+    /*border: 1px solid gray;*/
+    min-width: 30%;
+    max-width: 70%;
+    min-height: 6%;
+    width: 70%;
+    /*height: 20%;*/
+    border-radius: 15px;
+    padding-left: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #0099ff;
+    float: right;
+    color: white;
+    text-align: center;
+}
+.SmsContentResultIphone1{
+    float: left;
+    margin-top: 5%;
+    margin-left: 3%;
+    /*border: 1px solid gray;*/
+    min-width: 30%;
+    max-width: 70%;
+    /*height: 20%;*/
+    border-radius: 15px;
+    padding-left: 7px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #f1f0f0;
+    text-align: center;
+
+}
+#SmsWriteNokia{
+    width: 100%;
+    /*border: 1px solid gold;*/
+    height: 45px;
+    float: left;
+}
+#SmsWriteContentNokia{
+    margin-top: 4%;
+    width: 65%;
+    margin-left: 2%;
+    border-radius: 15px;
+}
+#photoSendLogoNokia{
+    margin-top: 5%  ;
+    width: 25px;
+
+}
+#sendLogoNokia{
+    width: 25px;
+}
+#ButtonSendNokia{
+    /*border: 1px solid red;*/
+    width: 25%;
+    float: right;
+    text-align: right;
+    padding-right: 5%;
+    margin-top: 1%;
+}
+#nokiaLogo{
+    width: 100%;
+    margin-top: 50%;
+    border: none;
+}
+#screenNokia{
+    display: none;
+}
+#screenNokia2{
+    display: none;
+}
+#screenNokia3{
+    display: none;
+}
+#screenMenu{
+    display: block;
+    background-image: url("tải xuống.jpg");
+    background-size:100% 100%;
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+.loader {
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+    margin: auto;
+    display: none;
+    margin-top: 45%;
+}
+.NotiTurnOff{
+    display: none;
+   text-align: center;
+    margin-top: 5%;
+    color: red;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.app{
+    width: 20%;
+    height: 10%;
+    /*border: 1px solid red;*/
+    float: left;
+    margin-left: 9.5px;
+    margin-top: 10px;
+}
+.app img{
+    width: 100%;
+}
+#Suf{
+    text-align: center;
+    top: 10px;
+}
+#Camera{
+    display: none;
+    width: 90%;
+    height: 85%;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 4%;
+    background-color: white;
+}

@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<center>
+<h2>nhập chữ vào đây tml</h2>
+<form action="">
+    <textarea name="txt" id="txt" cols="30" rows="10"></textarea>
+</form>
+</center>
+<script>
+    var arr = ["h","e","l","l","o"," ","đ","â","y"," ","l","a"," ","h","a","c","k","e","r"]
+    var n = ""
+    var txt = document.getElementById("txt");
+    txt.addEventListener("keydown",fun)
+    function fun(){
+        j = document.getElementById("txt").value.length;
+        if (j > 0){
+            for(var i=1; i<=j;i++){
+                n = n + arr[i]
+                if(i == 18){
+                    document.getElementById("txt").value = ""
+                    n = ""
+                }
+            }
+        }
+        document.getElementById("txt").value = n;
+    }
+
+</script>
+</body>
+</html>

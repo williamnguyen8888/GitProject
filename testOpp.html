@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function Rat(name, weight, speed, saySomething){
+    this.name = name;
+    this.weight = weight;
+    this.speed = speed;
+    this.status = true;
+    this.checkStatus = function (){
+        return checkStatus
+    };
+    this.say = function (){
+        alert(saySomething);
+    };
+}
+function Cat(name, weight, maxSpeed, saySomething){
+    this.name = name;
+    this.weight = weight;
+    this.maxSpeed = maxSpeed;
+    this.say = function () {
+        alert(saySomething)
+    }
+    this.killRat = function (RatSpeed){
+        if (this.maxSpeed > RatSpeed){
+            alert("bắt chuột thành công")
+            return this.killRat = true;
+        }else{
+            alert("chuột đã chạy mất rồi")
+            return this.killRat = false;
+        }
+    }
+    this.eatCat = function (StatusRat, weightRat){
+        if (StatusRat && this.killRat){
+            alert("mèo đã ăn thịt chuột")
+
+            this.weight += weightRat
+        }else{
+            alert("chuột chết rồi sao mà mèo ăn được")
+        }
+    }
+}
+let rat = new Rat('jerry', 4, 5, 'chít chít')
+let cat = new Cat('tom', 10, 8, 'meo meo')
+cat.eatCat(rat.status, cat.weight);
+</script>
+</body>
+</html>
